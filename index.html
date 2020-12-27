@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Landing Page</title>
   </head>
   <!-- LANDING PAGE -->
   <body>
@@ -14,20 +16,54 @@
 
       <!-- SITE-WIDE NAVIGATION -->
       <nav>
-        <a href="#">О нас</a>
-        <a href="#">Услуги</a>
-        <a href="#">Вакансии</a>
-        <a href="#">Новости</a>
-        <a href="#">Соглашения</a>
+        <ul>
+          <li><a href="#About">О нас</a></li>
+          <li>
+            <a href="#Services">Услуги</a>
+            <!-- Dropdown -->
+            <ul class="navbar__dropdown">
+              <li><a href="#">Услуга 1</a></li>
+              <li><a href="#">Услуга 2</a></li>
+              <li><a href="#">Услуга 3</a></li>
+            </ul>
+          </li>
+          <li><a href="#Jobs">Вакансии</a></li>
+          <li><a href="#News">Новости</a></li>
+          <li>
+            <a href="#Agreements">Соглашения</a>
+            <!-- Dropdown -->
+            <ul class="navbar__dropdown">
+              <li><a href="#">Соглашение 1</a></li>
+              <li><a href="#">Соглашение 2</a></li>
+            </ul>
+          </li>
+        </ul>
       </nav>
       <!-- SIGN-IN & REGISTER BUTTONS  -->
       <button type="button" name="button">Войти</button>
       <button type="button" name="button">Зарегистрироваться</button>
     </header>
+    <!-- MAIN -->
     <main>
       <!-- HERO IMAGE -->
-      <div class="">
-        <img src="" alt="">
+      <div class="bg-img">
+        <form class="" action="index.html" method="post">
+          <h1>Найдём номер под ваши пожелания</h1>
+          <!-- Прибытие -->
+          <label for=""></label>
+          <input type="text" name="" value="">
+
+          <!-- Выезд -->
+          <label for=""></label>
+          <input type="text" name="" value="">
+
+          <!-- Гости -->
+          <label for=""></label>
+          <input type="text" name="" value="">
+
+          <!-- Подобрать номер -->
+          <button type="submit">Подобрать номер</button>
+        </form>
       </div>
     </main>
     <!-- FOOTER -->

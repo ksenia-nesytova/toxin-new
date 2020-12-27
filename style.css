@@ -1,7 +1,39 @@
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+html, body {
+  height: 100%;
+}
+
+
 .container {
   min-width: 320px;
   max-width: 1920px;
+}
+
+
+/* HERO IMAGE */
+.bg-img {
+  /* image used */
+  background-image: url("hero1.png");
+
+  /* Height specified */
+  /* min-height: 900px; */
+  height: 50%;
+
+  /* Positioning */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: contain */
+  background-size: cover;
+  position: relative;
+}
+
+
+/* SITE-WIDE NAVIGATION */
+.navbar__dropdown {
+  
 }
