@@ -42,6 +42,11 @@ html, body {
   list-style: none;
 }
 
+/* ul li */
+.navbar-list-item {
+  display: inline-block;
+}
+
 /* li a */
 .navbar-list-link {
   text-decoration: none;
@@ -51,6 +56,7 @@ html, body {
 /* Dropdown */
 .dropdown-content {
   display: none;
+  position: absolute;
 }
 
 .dropdown:hover .dropdown-content {
