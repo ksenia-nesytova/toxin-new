@@ -34,6 +34,25 @@ html, body {
 
 
 /* SITE-WIDE NAVIGATION */
-.navbar__dropdown {
-  
+.navbar {
+}
+
+/* ul */
+.navbar-list {
+  list-style: none;
+}
+
+/* li a */
+.navbar-list-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
