@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+*:not(i){
+  font-family: "Montserrat";
+  color: rgba(31, 32, 65, 0.5);
+}
+
 html, body {
   height: 100%;
 }
@@ -27,6 +32,7 @@ html, body {
   /* Positioning */
   background-position: center;
   background-repeat: no-repeat;
+
   /* background-size: contain */
   background-size: cover;
   position: relative;
@@ -35,6 +41,7 @@ html, body {
 
 /* SITE-WIDE NAVIGATION */
 .navbar {
+  box-shadow: 0px 10px 20px 0px #1F2041 5 %;
 }
 
 /* ul */
@@ -61,4 +68,61 @@ html, body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* BUTTONS */
+/* default */
+.btn-default {
+  border-radius: 22px;
+  text-transform: uppercase;
+  border: solid 2px;
+}
+
+.btn-default:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-default:hover {
+  opacity: 0.5;
+}
+
+/* filled */
+.btn-filled{
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+}
+
+/* outline */
+.btn-outline {
+  position:relative;
+  box-sizing: border-box;
+
+  background-clip: padding-box;
+  border: transparent;
+
+  color: #BC9CFF;
+  background: white;
+}
+
+.btn-outline:before {
+  content:'';
+  position: absolute;
+  top:0px; right:0px; bottom:0px; left: 0px;
+
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+}
+
+/* outline hover  */
+.btn-outline:hover {
+  opacity:1;
+}
+
+.btn-outline:hover:before {
+  opacity: 0.5;
 }
