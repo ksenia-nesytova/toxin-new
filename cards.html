@@ -1,0 +1,77 @@
+<!-- ФОРМА ПОИСКА НОМЕРА   -->
+<form action="index.html" method="post" class="card-default">
+          <h1>Найдём номер под ваши пожелания</h1>
+
+          <!-- Прибытие -->
+          <label for="">Прибытие</label>
+          <input type="date" name="" value="" class="input-default input-date">
+
+          <!-- Выезд -->
+          <label for="">Выезд</label>
+          <input type="date" name="" value="" class="input-default input-date">
+
+          <!-- Гости -->
+          <label for="">Гости</label>
+          <select value="" placeholder="Сколько гостей" class="input-default">
+            <option value="" disabled selected>Сколько гостей</option>
+            <option value="adults">Взрослые</option>
+            <option value="children">Дети</option>
+            <option value="infants">Младенцы</option>
+          </select>
+
+          <!-- Подобрать номер -->
+          <button type="submit" class="btn-default btn-filled">Подобрать номер</button>
+        </form>
+
+	<!-- ФОРМА РЕГИСТРАЦИИ -->
+	<div class="card-default">
+		<h2>Регистрация аккаунта</h2>
+		<form action="">
+		<input type="text" name="Имя"placeholder="Имя" required class="input-default">
+
+		<input type="text" name="Фамилия" placeholder="Фамилия" required class="input-default">
+
+		<input type="radio" id="gender1" name="пол" value="male">
+		<label for="gender1">
+			<span>Мужчина</span>
+			<span class="control-indicator"></span>
+		</label>
+
+		<input type="radio" id="gender2" name="пол" value="female">
+		<label for="gender2">
+			<span>Женщина</span>
+			<span class="control-indicator"></span>
+		</label>
+
+
+		<label for="birthdate">Дата рождения</label>
+		<input type="date" name="Дата рождения" placeholder="ДД.ММ.ГГГГ" required class="input-default input-date">
+
+		<label for="signindata">Данные для входа в сервис</label>
+		<input type="email" name="email" placeholder="Email" id="signindata" required class="input-default">
+		<input type="password" name="password" id="signindata" placeholder="Пароль"required>
+
+		<label>
+			<input type="checkbox" name=""> Получать спецпредлоожения
+		</label>
+
+			<button type="submit" class="btn-default">Перейти к оплате</button>
+		</form>
+
+			Уже есть аккаунт на Toxin
+			<button class="btn-default">Войти</button>
+	</div>
+
+	<!-- ФОРМА ВХОДА -->
+	<div class="card-default">
+		<h2>Войти</h2>
+
+		<form action="">
+			<input type="email" name="email" placeholder="Email" required class="input-default">
+			<input type="password" name="password" placeholder="Пароль" required class="input-default">
+			<button type="submit" class="btn-default">Войти</button>
+		</form>
+
+		Нет аккаунта на Toxin?
+		<button class="btn-default">Создать</button>
+	</div>
