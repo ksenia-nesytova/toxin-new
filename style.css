@@ -131,3 +131,34 @@ html, body {
 .btn-outline:hover:before {
   opacity: 0.5;
 }
+
+/* button for forms */
+.btn-forms {
+  width: 320px;
+  height:44px;
+}
+
+/* CARDS & FORMS */
+.card-default {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  max-width: 380px;
+}
+
+label {
+  display: block;
+}
+
+.input-default {
+  display: inline-block;
+  height: 44px;
+  width: 320px;
+}
+
+.input-date {
+  min-width: 150px;
+  width:50%;
+}

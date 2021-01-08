@@ -52,23 +52,30 @@
     <main>
       <!-- HERO IMAGE -->
       <div class="bg-img">
-        <form class="" action="index.html" method="post">
-          <h1>Найдём номер под ваши пожелания</h1>
-          <!-- Прибытие -->
-          <label for=""></label>
-          <input type="text" name="" value="">
+        <!-- ФОРМА ПОИСКА НОМЕРА   -->
+  <form action="index.html" method="post" class="card-default">
+            <h1>Найдём номер под ваши пожелания</h1>
 
-          <!-- Выезд -->
-          <label for=""></label>
-          <input type="text" name="" value="">
+            <!-- Прибытие -->
+            <label for="">Прибытие</label>
+            <input type="date" name="" value="" class="input-default input-date">
 
-          <!-- Гости -->
-          <label for=""></label>
-          <input type="text" name="" value="">
+            <!-- Выезд -->
+            <label for="">Выезд</label>
+            <input type="date" name="" value="" class="input-default input-date">
 
-          <!-- Подобрать номер -->
-          <button type="submit" class="btn-default btn-filled">Подобрать номер</button>
-        </form>
+            <!-- Гости -->
+            <label for="">Гости</label>
+            <select value="" placeholder="Сколько гостей" class="input-default">
+              <option value="" disabled selected>Сколько гостей</option>
+              <option value="adults">Взрослые</option>
+              <option value="children">Дети</option>
+              <option value="infants">Младенцы</option>
+            </select>
+
+            <!-- Подобрать номер -->
+            <button type="submit" class="btn-default btn-filled btn-forms">Подобрать номер</button>
+          </form>
       </div>
     </main>
     <!-- FOOTER -->
