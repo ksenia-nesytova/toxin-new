@@ -1,13 +1,31 @@
+/* FONTS */
+$main-font: "Montserrat";
+$header-font: "Quicksand";
+
+/* FONT WEIGHT */
+$normal: 400;
+$bold: 700;
+
+/* FONT-SIZE & LINE-HEIGHT*/
+$h1-size: 24px/30px;
+$h2-size: 19px/23.75px;
+$h3-size: 12px/14.63px;
+$main-size: 14px/24px;
+
 /* COLORS */
-$dark-shade100: #1F2041;
-$dark-shade75: rgba(#1F2041, .75);
-$dark-shade50: rgba(#1F2041, .5);
-$dark-shade25: rgba(#1F2041, .25);
-$dark-shade5: rgba(#1F2041, .05);
+$dark-shade: #1F2041;
+$dark-shade75: rgba($dark-shade, .75);
+$dark-shade50: rgba($dark-shade, .5);
+$dark-shade25: rgba($dark-shade, .25);
+$dark-shade5: rgba($dark-shade, .05);
 $purple: #BC9CFF;
 $green: #6FCF97;
 $blue: #8BA4F9; //for gradient
 
+
+p{
+  color:red;
+}
 
 * {
   box-sizing: border-box;
@@ -16,8 +34,8 @@ $blue: #8BA4F9; //for gradient
 }
 
 body:not(i){
-  font-family: "Montserrat";
-  color: rgba(31, 32, 65, 0.5);
+  font-family: $main-font;
+  color: $dark-shade50;
 }
 
 html, body {
@@ -28,6 +46,12 @@ html, body {
 .container {
   min-width: 320px;
   max-width: 1920px;
+}
+
+/* HEADERS */
+h1, h2, h3 {
+  font-family: $header-font;
+  font-weight: $bold;
 }
 
 
@@ -51,7 +75,7 @@ html, body {
 
 /* HEADER */
 .page-header {
-  box-shadow: 0px 10px 20px 0px #1F2041 5%;
+  box-shadow: 0px 10px 20px 0px rgba($dark-shade, .05);
 }
 
 /* SITE-WIDE NAVIGATION */
@@ -105,7 +129,7 @@ html, body {
 
 /* filled */
 .btn-filled{
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, $purple 0%, $blue 100%);
   color: #FFFFFF;
   border-color: transparent;
 }
@@ -118,7 +142,7 @@ html, body {
   background-clip: padding-box;
   border: transparent;
 
-  color: #BC9CFF;
+  color: $purple;
   background: white;
 }
 
@@ -127,7 +151,7 @@ html, body {
   position: absolute;
   top:0px; right:0px; bottom:0px; left: 0px;
 
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, $purple 0%, $blue 100%);
 
   z-index: -1;
   margin: -2px;
