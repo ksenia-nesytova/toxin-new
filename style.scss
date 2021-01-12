@@ -20,12 +20,8 @@ $dark-shade25: rgba($dark-shade, .25);
 $dark-shade5: rgba($dark-shade, .05);
 $purple: #BC9CFF;
 $green: #6FCF97;
-$blue: #8BA4F9; //for gradient
-
-
-p{
-  color:red;
-}
+$blue: #8BA4F9; //for button gradient
+$light-blue: #66D2EA; //for range slider
 
 * {
   box-sizing: border-box;
@@ -84,12 +80,12 @@ h1, h2, h3 {
 }
 
 /* ul */
-.navbar-list {
+.list-default {
   list-style: none;
 }
 
 /* ul li */
-.navbar-list-item {
+.li-default {
   display: inline-block;
 }
 
@@ -186,14 +182,42 @@ h1, h2, h3 {
 label {
   display: block;
 }
+//
+// .input-default {
+//   display: inline-block;
+//   height: 44px;
+//   width: 320px;
+// }
+//
+// .input-date {
+//   min-width: 150px;
+//   width:50%;
+// }
 
+/*INPUT*/
 .input-default {
-  display: inline-block;
-  height: 44px;
-  width: 320px;
+border: 1px solid $dark-shade25;
+box-sizing: border-box;
+border-radius: 4px;
+
+outline:none;
+
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+
+ color: $dark-shade25;
 }
 
-.input-date {
-  min-width: 150px;
-  width:50%;
+/* text fields */
+.input-text:hover, .input-text:focus {
+  border: 1px solid $dark-shade50;
+}
+.input-text:focus::placeholder, .input-text:hover::placeholder {
+  color: $dark-shade75;
+}
+
+/* date dropdown*/
+.input-dropdown {
+  color: $dark-shade75;
 }

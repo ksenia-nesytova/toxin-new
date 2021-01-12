@@ -8,6 +8,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome  -->
+    <script src="https://kit.fontawesome.com/e771a4f04e.js" crossorigin="anonymous"></script>
     <title>Landing Page</title>
   </head>
   <!-- LANDING PAGE -->
@@ -19,10 +21,10 @@
 
       <!-- SITE-WIDE NAVIGATION -->
       <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-list-item"><a href="#About" class="navbar-list-link">О нас</a></li>
+        <ul class="list-default">
+          <li class="li-default"><a href="#About" class="navbar-list-link">О нас</a></li>
           <!-- Dropdown -->
-          <li class="navbar-list-item dropdown">
+          <li class="li-default dropdown">
             <a href="#Services" class="navbar-list-link">Услуги</a>
             <i class="material-icons">expand_more</i>
             <ul class="navbar-list dropdown-content">
@@ -31,10 +33,10 @@
               <li><a href="#" class="navbar-list-link">Услуга 3</a></li>
             </ul>
           </li>
-          <li class="navbar-list-item"><a href="#Jobs" class="navbar-list-link">Вакансии</a></li>
-          <li class="navbar-list-item"><a href="#News" class="navbar-list-link">Новости</a></li>
+          <li class="li-default"><a href="#Jobs" class="navbar-list-link">Вакансии</a></li>
+          <li class="li-default"><a href="#News" class="navbar-list-link">Новости</a></li>
           <!-- Dropdown -->
-          <li class="navbar-list-item dropdown">
+          <li class="li-default dropdown">
             <a href="#Agreements" class="navbar-list-link">Соглашения</a>
             <i class="material-icons">expand_more</i>
             <ul class="navbar-list dropdown-content">
@@ -58,15 +60,15 @@
 
             <!-- Прибытие -->
             <label for="">Прибытие</label>
-            <input type="date" name="" value="" class="input-default input-date">
+            <input type="date" name="" value="" class="input-default input-dropdown">
 
             <!-- Выезд -->
             <label for="">Выезд</label>
-            <input type="date" name="" value="" class="input-default input-date">
+            <input type="date" name="" value="" class="input-default input-dropdown">
 
             <!-- Гости -->
             <label for="">Гости</label>
-            <select value="" placeholder="Сколько гостей" class="input-default">
+            <select value="" placeholder="Сколько гостей" class="input-default input-dropdown">
               <option value="" disabled selected>Сколько гостей</option>
               <option value="adults">Взрослые</option>
               <option value="children">Дети</option>
