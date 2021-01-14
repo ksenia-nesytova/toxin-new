@@ -38,6 +38,7 @@ html, body {
   height: 100%;
 }
 
+main {height: 100%} // for bg image to properly display
 
 .container {
   min-width: 320px;
@@ -50,7 +51,6 @@ h1, h2, h3 {
   font-weight: $bold;
 }
 
-
 /* HERO IMAGE */
 .bg-img {
   /* image used */
@@ -58,15 +58,13 @@ h1, h2, h3 {
 
   /* Size specified */
   max-width: 100%;
-  height:auto;
-
+  height: 100%;
 
   /* Positioning */
   background-position: center;
   background-repeat: no-repeat;
 
   background-size: cover;
-  position: relative;
 }
 
 /* HEADER */
