@@ -1,0 +1,157 @@
+
+<head>
+  <link rel="stylesheet" href="uikit.min.css">
+</head>
+
+<!-- BUTTONS -->
+<button type="button" name="button" class="btn-default btn-outline">Войти</button>
+<button type="button" name="button" class="btn-default btn-filled">Зарегистрироваться</button>
+
+<!-- Подобрать номер -->
+<button type="submit" class="btn-default btn-filled btn-forms">Подобрать номер</button>
+<!-- ??? -->
+
+<br>
+<br>
+
+<!-- CARDS -->
+
+<!-- Форма поиска номера -->
+<form action="index.html" method="post" class="card-default">
+          <h1>Найдём номер под ваши пожелания</h1>
+
+          <!-- Прибытие -->
+          <label for="">Прибытие</label>
+          <input type="date" name="" value="" class="input-default input-dropdown">
+
+          <!-- Выезд -->
+          <label for="">Выезд</label>
+          <input type="date" name="" value="" class="input-default input-dropdown">
+
+          <!-- Гости -->
+          <label for="">Гости</label>
+          <select value="" placeholder="Сколько гостей" class="input-default input-dropdown">
+            <option value="" disabled selected>Сколько гостей</option>
+            <option value="adults">Взрослые</option>
+            <option value="children">Дети</option>
+            <option value="infants">Младенцы</option>
+          </select>
+
+          <!-- Подобрать номер -->
+          <button type="submit" class="btn-default btn-filled btn-forms">Подобрать номер</button>
+        </form>
+
+        <br>
+        <br>
+
+        <!-- Форма регистрации -->
+      	<div class="card-default">
+      		<h2>Регистрация аккаунта</h2>
+      		<form action="">
+      		<input type="text" name="Имя"placeholder="Имя" required>
+
+      		<input type="text" name="Фамилия" placeholder="Фамилия" required>
+
+      		<input type="radio" id="gender1" name="пол" value="male">
+      		<label for="gender1">
+      			<span>Мужчина</span>
+      			<span class="control-indicator"></span>
+      		</label>
+
+      		<input type="radio" id="gender2" name="пол" value="female">
+      		<label for="gender2">
+      			<span>Женщина</span>
+      			<span class="control-indicator"></span>
+      		</label>
+
+
+      		<label for="birthdate">Дата рождения</label>
+      		<input type="date" name="Дата рождения" placeholder="ДД.ММ.ГГГГ" required>
+
+      		<label for="signindata">Данные для входа в сервис</label>
+      		<input type="email" name="email" placeholder="Email" id="signindata" required>
+      		<input type="password" name="password" id="signindata" placeholder="Пароль"required>
+
+      		<label>
+      			<input type="checkbox" name=""> Получать спецпредлоожения
+      		</label>
+
+      			<button type="submit" class="button">Перейти к оплате</button>
+      		</form>
+
+      			Уже есть аккаунт на Toxin
+      			<button class="btn-default">Войти</button>
+      	</div>
+
+        <br>
+        <br>
+
+      	<!-- форма входа -->
+      	<div class="card-default">
+      		<h2>Войти</h2>
+      		<form action="">
+      			<input type="email" name="email" placeholder="Email" required>
+      			<input type="password" name="password" placeholder="Пароль" required>
+      			<button type="submit" class="btn-default">Войти</button>
+      		</form>
+      		<span>Нет аккаунта на Toxin?</span>
+      		<button class="btn-default">Создать</button>
+      	</div>
+
+        <br>
+        <br>
+
+        <!-- Карточка бронирования -->
+        <form class="card-default" action="index.html" method="post">
+          <!-- Прибытие -->
+          <label for="">Прибытие</label>
+          <input type="date" name="" value="" class="input-default input-dropdown">
+
+          <!-- Выезд -->
+          <label for="">Выезд</label>
+          <input type="date" name="" value="" class="input-default input-dropdown">
+
+          <!-- Гости -->
+          <label for="">Гости</label>
+          <select value="" placeholder="Сколько гостей" class="input-default input-dropdown">
+          <option value="1">1 гость</option>
+          <option value="2">2 гостя</option>
+          <option value="3">3 гостя</option>
+          <option value="4">4 гостя</option>
+          </select>
+          <div>
+            <div>
+              <span>9 990₽ х 4 суток</span>
+              <span>39 960₽</span>
+            </div>
+            <div>
+              <span>Сбор за услуги: скидка 2 179₽</span>
+              <span>0₽</span>
+            </div>
+            <div>
+              <span>Сбор за дополнительные услуги</span>
+              <span>300₽</span>
+            </div>
+            <div class="">
+              <span>Итого</span>
+              <span>38 081₽</span>
+            </div>
+          </div>
+          <button type="button" class="btn-default">Забронировать</button>
+        </form>
+
+        <!-- Карточка номера -->
+        <div class="card-default">
+          <div class="card-img">
+            123456789
+          </div>
+          <div class="">
+            <span>№888</span> <span>люкс</span> <span>9 990₽ в сутки</span>
+          </div>
+          <div class="room-rating">
+            <span>145 отзывов</span>
+          </div>
+        </div>
+
+        <br>
+        <br>

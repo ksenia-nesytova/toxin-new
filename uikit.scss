@@ -1,4 +1,3 @@
-/* FONTS */
 $main-font: "Montserrat";
 $header-font: "Quicksand";
 
@@ -23,92 +22,11 @@ $green: #6FCF97;
 $blue: #8BA4F9; //for button gradient
 $light-blue: #66D2EA; //for range slider
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body:not(i){
-  font-family: $main-font;
-  color: $dark-shade50;
-}
-
-html, body {
-  height: 100%;
-}
-
-main {
-  display:flex;
-  flex-direction:column;
-  flex: 1 1 auto;
-  height: 100%
-} // for bg image to properly display
-
-.container {
-  min-width: 320px;
-  max-width: 1920px;
-  width: 100%;
-  padding-left: 9.72%;
-  padding-right: 9.72%;
-}
 
 /* HEADERS */
 h1, h2, h3 {
   font-family: $header-font;
   font-weight: $bold;
-}
-
-/* HERO IMAGE */
-.bg-img {
-  /* image used */
-  background-image: url("hero1.png");
-
-  /* Size specified */
-  max-width: 100%;
-  height: 100%;
-
-  /* Positioning */
-  background-position: center;
-  background-repeat: no-repeat;
-
-  background-size: contain;
-}
-
-/* HEADER */
-.page-header {
-  box-shadow: 0px 10px 20px 0px rgba($dark-shade, .05);
-}
-
-/* SITE-WIDE NAVIGATION */
-.navbar {
-  display: inline-flex;
-}
-
-/* ul */
-.list-default {
-  list-style: none;
-}
-
-/* ul li */
-.li-default {
-  display: inline-block;
-}
-
-/* li a */
-.navbar-list-link {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Dropdown */
-.dropdown-content {
-  display: none;
-  position: absolute;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 
@@ -172,7 +90,6 @@ h1, h2, h3 {
 }
 
 
-
 /* CARDS & FORMS */
 .card-default {
   background: #FFFFFF;
@@ -183,20 +100,19 @@ h1, h2, h3 {
   max-width: 380px;
 }
 
+.card-img {
+  background-image: url("room1.png");
+  /* Size specified */
+  max-width: 270px;
+  max-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 label {
   display: block;
 }
-//
-// .input-default {
-//   display: inline-block;
-//   height: 44px;
-//   width: 320px;
-// }
-//
-// .input-date {
-//   min-width: 150px;
-//   width:50%;
-// }
 
 /*INPUT*/
 .input-default {
@@ -224,12 +140,4 @@ line-height: 18px;
 /* date dropdown*/
 .input-dropdown {
   color: $dark-shade75;
-}
-
-
-/*FOOTER*/
-.footer-main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
 }

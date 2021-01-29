@@ -15,7 +15,7 @@
   <!-- LANDING PAGE -->
   <body>
     <!-- HEADER -->
-    <header class="page-header">
+    <header class="page-header container">
       <!-- LOGO -->
       <img src="logo.svg" alt="logo">
 
@@ -53,39 +53,63 @@
     <!-- MAIN -->
     <main>
       <!-- HERO IMAGE -->
-      <div class="bg-img">
-        <!-- ФОРМА ПОИСКА НОМЕРА   -->
-  <form action="index.html" method="post" class="card-default">
-            <h1>Найдём номер под ваши пожелания</h1>
-
-            <!-- Прибытие -->
-            <label for="">Прибытие</label>
-            <input type="date" name="" value="" class="input-default input-dropdown">
-
-            <!-- Выезд -->
-            <label for="">Выезд</label>
-            <input type="date" name="" value="" class="input-default input-dropdown">
-
-            <!-- Гости -->
-            <label for="">Гости</label>
-            <select value="" placeholder="Сколько гостей" class="input-default input-dropdown">
-              <option value="" disabled selected>Сколько гостей</option>
-              <option value="adults">Взрослые</option>
-              <option value="children">Дети</option>
-              <option value="infants">Младенцы</option>
-            </select>
-
-            <!-- Подобрать номер -->
-            <button type="submit" class="btn-default btn-filled btn-forms">Подобрать номер</button>
-          </form>
+      <div class="bg-img container">
+    
       </div>
     </main>
     <!-- FOOTER -->
-    <footer>
-      <!-- FOOTER COPYRIGHT -->
-      <div class="">
-
-      </div>
+    <footer class="container">
+      <!-- MAIN FOOTER -->
+  	<section class="footer-main">
+  		<div class="ft-group">
+  			<img src="logo.svg" alt="logo">
+  			<p>Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
+  		</div>
+  		<div class="ft-group">
+  			<h2>Навигация</h2>
+  			<ul class="list-default">
+  				<li><a href="#">О нас</a></li>
+  				<li><a href="#">Новости</a></li>
+  				<li><a href="#">Служба поддержки</a></li>
+  				<li><a href="#">Услуги</a></li>
+  			</ul>
+  		</div>
+  		<div class="ft-group">
+  			<h2 class="ft-title">О нас</h2>
+  			<ul class="list-default">
+  				<li><a href="#">О сервисе</a></li>
+  				<li><a href="#">Наша команда</a></li>
+  				<li><a href="#">Вакансии</a></li>
+  				<li><a href="#">Ивесторы</a></li>
+  			</ul>
+  		</div>
+  		<div class="ft-group">
+  			<h2>Служба поддержки</h2>
+  			<ul class="list-default">
+  				<li><a href="#">Соглашения</a></li>
+  				<li><a href="#">Сообщества</a></li>
+  				<li><a href="#">Связь с нами</a></li>
+  			</ul>
+  		</div>
+  			<div class="ft-group">
+  				<h2>Подписка</h2>
+  				<p>Получайте специальные предложения и новости сервиса</p>
+  				<form>
+  					<input type="email" name="email" placeholder="Email" class="input-default input-text">
+  					<input type="submit" value="submit" class="form-btn">
+  				</form>
+  			</div>
+  		</div>
+  	</section>
+  	<!-- FOOTER COPYRIGHT & SOCIAL -->
+  	<section class="footer-copyright">
+  		<ul class="list-social">
+  			<li>Copyright &copy; 2018 Toxin отель. Все права зачищены.</li>
+  			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  			<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+  			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+  		</ul>
+  	</section>
     </footer>
   </body>
 </html>
