@@ -29,6 +29,11 @@ $light-blue: #66D2EA; //for range slider
   margin: 0;
 }
 
+.clearfix {
+  clear: both;
+}
+
+
 body:not(i){
   font-family: $main-font;
   color: $dark-shade50;
@@ -42,8 +47,8 @@ main {
   display:flex;
   flex-direction:column;
   flex: 1 1 auto;
-  height: 100%
-} // for bg image to properly display
+  height: 100%; // for bg image to properly display
+}
 
 .container {
   min-width: 320px;
@@ -83,11 +88,13 @@ h1, h2, h3 {
 /* SITE-WIDE NAVIGATION */
 .navbar {
   display: inline-flex;
+  float:right;
 }
 
 /* ul */
 .list-default {
   list-style: none;
+  justify-content: space-between;
 }
 
 /* ul li */
